@@ -1,4 +1,4 @@
-# 口罩佩戴检测大赛
+# 疫情期间互联网虚假新闻检测
 [竞赛链接](https://www.datafountain.cn/competitions/422)
 ## 数据下载
 [数据链接](https://www.datafountain.cn/competitions/422/datasets)
@@ -22,10 +22,10 @@ content + comment_all
 |bert|-1|-1||
 
 ## script
-nohup python main.py -task=0 -m='bert' -b=50 -e=8 -mode=2 > nohup/bert_task0.out 2>&1 &
-nohup python main.py -task=1 -m='bert' -b=35 -e=8 -mode=2 > nohup/bert_task1.out 2>&1 &
-nohup python main.py -task=2 -m='bert' -b=35 -e=8 -mode=2 > nohup/bert_task2.out 2>&1 &
+nohup python main.py -task=0 -m='bert' -b=50 -e=8 -mode=2 > nohup/bert_task0.out 2>&1 &  
+nohup python main.py -task=1 -m='bert' -b=35 -e=8 -mode=2 > nohup/bert_task1.out 2>&1 &  
+nohup python main.py -task=2 -m='bert' -b=35 -e=8 -mode=2 > nohup/bert_task2.out 2>&1 &  
 
-python main.py -o=predict -task=3
+python main.py -o=predict -task=3  
 
 ## note
